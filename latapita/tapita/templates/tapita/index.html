@@ -1,0 +1,104 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purificadora La Tapita</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/stylee.css' %}">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="getLocation()">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+            <a class="navbar-brand" href="#"></a>
+            <img src="https://res.cloudinary.com/dna5ogpht/image/upload/c_scale,r_13,w_151/v1520752458/tapis.png">
+            </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#services">SERVICIOS</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1>Purificadora</h1> 
+        <h1>La tapita</h1> 
+    </div>
+<! container>
+    <div id="nosotros" class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Nosotros</h2>
+                <h4>Somos una purificadora pequeña la cual ofrece calidad en su producto.</h4>      
+                <p></p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-tint logo"></span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-grey text-center">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo"></span>
+            </div>
+            <div class="col-sm-8">
+                <h2></h2>
+                <h4><strong>MISIÓN:</strong> Proveer a nuestros clientes de un producto confiable para el consumo propio.  </h4>   
+                <p><strong>VISIÓN:</strong> Alcanzar y mantener nuestra confianza con nuestros clientes.</p>
+            </div>
+        </div>
+    </div>
+        <div id="services" class="container-fluid text-center">
+            <h2>SERVICIOS</h2>
+            <h4>Nosotros ofrecemos</h4>
+            <br>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-map-marker logo-small"></span>
+                        <h4>PLANTA</h4>
+                        <p>Visitanos en nuestra planta.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-tower logo-small"></span>
+                        <h4>DOMICILIO</h4>
+                        <p>Te lo llevamos a tu casa.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-earphone logo-small"></span>
+                        <h4>LLAMADA</h4>
+                        <p>Servicio express</p>
+                    </div>
+                </div>
+        </div>
+        <div id="contact" class="container-fluid bg-grey text-center">
+            <h2>CONTACTO</h2>
+            <div id="map" class="maps">
+
+                <iframe src="https://www.google.com/maps/d/embed?mid=11dn1lJ9QLYhhfMHCE036BtfiJgly1LpO" width="70%" height="480"></iframe>
+            </div>
+            <h2>ENVIANOS UN CORREO PARA QUEJAS Y SUGERENCIAS</h2>
+            <span class="glyphicon glyphicon-envelope logo-smaall"></span>
+            <p>latapita@latapita.com</p>
+        </div>
+    <footer class="container-fluid bg-4">
+        <div class="copyright">
+            © 2018, Hecho <font color="#FA5858" size="3px">♥</font> en Mexico.
+        </div> 
+    </footer>       
+</body>
+</html>
